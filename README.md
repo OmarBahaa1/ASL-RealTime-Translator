@@ -9,7 +9,7 @@
 ## 📌 Project Overview
 This project is a real-time Computer Vision application that translates American Sign Language (ASL) alphabet gestures into text using a webcam. It utilizes a custom-trained **YOLOv8 Deep Learning model** for hand tracking and classification, wrapped in a user-friendly **Tkinter Graphical User Interface (GUI)**.
 
-![Project Screenshot](locking.png)
+![Project Screenshot](Screen.png)
 ## 🚀 Key Features
 * **Real-Time AI Inference:** Utilizes YOLOv8 nano (`yolov8n`) to simultaneously perform bounding box regression and multi-class classification (A-Z) at high FPS.
 * **Custom "Snapshot Debouncing" Logic:** Webcams inherently capture motion blur when hands move between signs, confusing standard AI models. I engineered custom Python debouncing logic that forces the model to maintain >65% confidence for 15 consecutive frames before "locking in" a translation. This eliminates flickering and double-typing!
